@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vishesh.awakken.alarmnotification"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/Motive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@color/colorPrimary"
+        android:textSize="28dp"
+
+        android:layout_above="@+id/dismissButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="56dp" />
+
+
+
+    <Button
+        android:id="@+id/snoozeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#0700ff"
+        android:text="Snooze"
+        android:textSize="18dp"
+        android:layout_weight="0.36"
+        android:layout_marginBottom="175dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/dismissButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="#F70000"
+        android:text="Dismiss"
+        android:textSize="18dp"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/snoozeButton"
+        android:layout_alignStart="@+id/snoozeButton" />
+
+
+
+
+</RelativeLayout>
